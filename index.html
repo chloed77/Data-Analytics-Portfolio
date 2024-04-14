@@ -1,78 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Chloe Downes</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>  
-        <li><a href="#experience">Experience</a></li>  
-        <li><a href="#projects">Projects</a></li>  
-        <li><a href="#contact">Contact</a></li>  
-      </ul>  
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Chloe Downes</div>
-    <div class="hamburger-menu">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Chloe Downes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#more about me">More About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Chloe Downes</div>
+      <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()"></a>About</a></li>  
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>  
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>  
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#media" onclick="toggleMenu()">Media</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-    </div>
-  </nav>
-  <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/IMG_8067.jpg" alt="Chloe Downes profile picture">
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/IMG_8067.jpg" alt="Chloe Downes profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Chloe Downes</h1>
+        <p class="section__text__p2">Data Analytics Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello,I'm</p>
-            <h1 class="title">Chloe Downes</h1>
-            <p class="section__text__p2">Data Analytics Student</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2" 
-                    onclick="window.open('./assets/CV.pdf')"
-
-                >Download CV
-                </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'"
-                >Contact Info
-                </button>
-          </div>
-          <div id="social-container">
-            <img 
-            src="./assets/linkedin.png" 
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon" 
+            class="icon"
             onclick="location.href='https://www.linkedin.com/in/chloe-d-653992174/'"
-            />
-            <img 
-            src="./assets/github.png" 
+          />
+          <img
+            src="./assets/github.png"
             alt="My Github profile"
-            class="icon" 
+            class="icon"
             onclick="location.href='https://github.com/chloed77'"
-            />
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-me-pink.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Finance Intern</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Business Studies <br />Distinction award in Certificate in Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a final-year business studies student specializing in data analytics at Dublin City University.
+              I am an ambitious, hardworking individual who works well both as an individual and as part of a team. 
+              I possess strong communication skills and problem solving skills.
+            </p>  
+            <br />
+            <p>
+              I am currently specializing in data analytics in addition to completing finance modules. 
+              I initially completed my work experience in the finance sector, and upon working in this sector, 
+              I discovered I am much more drawn to the interchangeability of data analytics.
+              I am very interested in the new opportunities of this sector.
+              I am drawn to a career in data analytics due to its dynamic nature and its potential to drive informed decision-making across all aspects of business. 
+              I am fascinated by the prospect of using advanced analytically tools and techniques to solve complex problems and optimize processes. 
+              Data analytics not only offers a rewarding career path but also allows me to contribute to solving real-world challenges, making a tangible impact on businesses and society as a whole. 
+            </p>
           </div>
         </div>
-  </section>
-  <script src="scriptl.js"></script>  
- </body>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#more about me'"
+      />
+    </section>
+
+    <section id="more about me">
+      <h1 class="title">Hobbies</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/hobbies.jpeg"
+            alt="Hobbies picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/football.jpeg"
+                alt="Football icon"
+                class="icon"
+              />
+              <h3>Sports</h3>
+              <p>Parnells GAA <br />Derby County FC and Ireland</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/music.png"
+                alt="Music icon"
+                class="icon"
+              />
+              <h3>Music</h3>
+              <p>Instruments <br />Concerts</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              From the rugged pitches of Parnells to Pride Park stadium of Derby County FC, my two great passions lie: gaelic football and the beautiful game. Since the tender age of five, I've been a member of Parnells, my local GAA team, and Shelbourne FC from the age of eight till six-teen. As year pass by, my love for football only deepened. Yet, my devotion extends beyond the local grounds. As a passionate Derby County FC and Ireland MNT and WNT fan, I travel often to witness the drama unfold live, taking me from Australia to Paris to Barcelona to London in pursuit of football's magic.<br /> </p>
+              <br />
+              <p>
+              But amidst the cheers and chants, music remains my solace. Inspired by my grandad's teachings, I picked up ability to play guitar and the piano.
+            </p>  
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#media'"
+      />
+    </section>
+    <section id="media">
+      <p class="section__text__p1">Browse Data Analytics</p>
+      <h1 class="title">Media</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/spotify.png"
+                alt="Spotify"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spotify Podcasts</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://open.spotify.com/episode/4lSoqMpvM62xBS3yx3yOkK?si=MEaaHGdwQyip-GZj5UlyaQ&preview=video'"
+              >
+                Do You Have to Be Good at Statistics to Be a Data Analyst
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://open.spotify.com/episode/2rIOXtiCtVGh6HtK0NKT27?si=gaBi2SZsSLuLANGVZ18mOw'"
+              >
+                Landing a Data Analyst Job
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ted-2.jpeg"
+                alt="TED Talk & Podcast"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Podcast & TED Talk</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://open.spotify.com/episode/6EMbMN6nre1fx7I1yZJxlc?si=eUswC8CSR7Ogky4gk719iQ'"
+              >
+                How to Become a Data Analyst - Podcast
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/YMnqPTLoj7o?si=WDClW47IhEwaANwk'"
+              >
+                Rebecca Nugent - TED Talk
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ted.png"
+                alt="TED Talks"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TED Talks</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=qrhRfPY4F4w'"
+              >
+              Jose Miguel Cansado
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=5Zg-C8AAIGg'"
+              >
+              David McCandless
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="blog">
+      <p class="section__text__p1">Browse Data Analytics</p>
+      <h1 class="title">Blogs</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog.png"
+                alt="Blog"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blogs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.kdnuggets.com/10-github-repositories-to-master-python'"
+              >
+              10 GitHub Repositories to Master Python
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.dataversity.net/women-in-data-meet-christina-sandema-sombe/'"
+              >
+              Women in Data: Meet Christina Sandema-Sombe
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog-2.jpeg"
+                alt="Blogs"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blogs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.dataversity.net/how-in-database-machine-learning-transforms-decision-making/'"
+              >
+                How In-Database Machine Learning Transforms Decision-Making
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.ibm.com/blog/watson-discovery-grammys/'"
+              >
+              How the Recording Academy uses IBM watsonx to enhance the fan experience at the GRAMMYs
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog-3.jpg"
+                alt="Blogs"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blogs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.smartdatacollective.com/implications-of-blockchain-technology-on-big-data/'"
+              >
+              The Implications of Blockchain Technology on Big Data
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.smartdatacollective.com/important-guide-to-unsupervised-machine-learning/'"
+              >
+              An Important Guide To Unsupervised Machine Learning
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="more blog">
+      <p class="section__text__p1">Browse Data Analytics</p>
+      <h1 class="title">More Blogs</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog.png"
+                alt="Blog"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">More Blog Posts</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.kdnuggets.com/exploring-the-openai-api-with-python'"
+            >
+            Exploring the OpenAI API with Python
+            </button>
+            <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.thinkful.com/blog/data-analyst-jobs/'"
+              >
+              Data Analyst Jobs
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog-2.jpeg"
+                alt="Blogs"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">More Blog Posts</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.dataversity.net/maximizing-business-value-with-generative-ai/'"
+              >
+              Maximizing Business Value with Generative AI
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.kdnuggets.com/5-free-sql-courses-for-data-science-beginners'"
+              >
+              5 Free SQL Courses for Data Science Beginners 
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog-3.jpg"
+                alt="Blogs"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">More Blog Posts</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.ibm.com/blog/ibm-watson-and-espn-use-ai-to-transform-fantasy-football-data-into-insight/'"
+              >
+              IBM and ESPN use AI models built with watsonx to transform fantasy football data into insight
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.smartdatacollective.com/whats-the-secret-to-success-as-a-data-scientist/'"
+            >
+            Whats the Secret to Success as a Data Scientist?
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Portfolio</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:chloedownes7@gmail.com">chloedownes7@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/chloe-d-653992174/">LinkedIn</a></p>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.jpeg"
+            alt="Phone icon"
+            class="icon contact-icon email-icon"
+          />
+          <p> 085 2755894</p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/location.png"
+            alt="Location icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.google.ie/maps/place/Dublin/@53.3242066,-6.4105099,11z/data=!3m1!4b1!4m6!3m5!1s0x48670e80ea27ac2f:0xa00c7a9973171a0!8m2!3d53.3498053!4d-6.2603097!16zL20vMDJjZnQ?entry=ttu">Dublin, Ireland</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Chloe Downes.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
